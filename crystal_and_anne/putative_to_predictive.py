@@ -22,11 +22,13 @@ def main():
     # Get the filenames for the timestamps.txt and dlc CSV
     input_folder = "C:\\Users\\minjarec\\OneDrive - The University of Colorado Denver\\Documents\\putative_nwbs"
     output_folder = "C:\\Users\\minjarec\\OneDrive - The University of Colorado Denver\\Documents\\predict_nwbs"
-    num_training_samples = 40  # TODO Change me?
+    num_training_samples = 25  # TODO Change me?
     skip_load_trainingdata = True
 
     files = glob.glob(os.path.join(input_folder, "**.nwb"))
     print("Creating enrichment..")
+    import matplotlib
+    matplotlib.use("agg")
     enrich = PredictedSaccadeGUIEnrichment(200, select_putative_training_nwbs(files, skip_load_trainingdata), num_training_samples, {})
 
     for file in files:

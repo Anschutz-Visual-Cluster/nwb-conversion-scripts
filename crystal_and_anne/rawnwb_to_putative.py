@@ -45,8 +45,10 @@ def process_folder(nwbfilename, outputdir):
 
 
 def main():
-    prefix = "/run/user/1000/gvfs/smb-share:server=felsenlabnas.local,share=felsennasfolder/AnneData/raw_nwbs_unzipped"  # TODO Change me to dir of sessions
-    outputdir = "putative_output"
+    # prefix = "/run/user/1000/gvfs/smb-share:server=felsenlabnas.local,share=felsennasfolder/AnneData/raw_nwbs_unzipped"  # TODO Change me to dir of sessions
+    # prefix = "Z:\\AnneData\\raw_nwbs_unzipped"
+    prefix = "C:\\Users\\minjarec\\OneDrive - The University of Colorado Denver\\Documents\\raw_nwbs_unzipped"
+    outputdir = "C:\\Users\\minjarec\\OneDrive - The University of Colorado Denver\\Documents\\putative_nwbs"
 
     datafiles = search_for_data(prefix)
     if not os.path.exists(outputdir):

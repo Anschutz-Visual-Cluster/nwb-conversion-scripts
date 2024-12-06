@@ -5,3 +5,4 @@ simply-nwb>=1.1.7
 numpy
 pandas
 h5py
+jupyterlab

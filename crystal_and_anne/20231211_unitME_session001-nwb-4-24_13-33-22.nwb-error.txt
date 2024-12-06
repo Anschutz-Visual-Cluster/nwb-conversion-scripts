@@ -1,0 +1,1 @@
+Missing NWB version in file. The file is not a valid NWB file.
