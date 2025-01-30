@@ -115,6 +115,7 @@ STIM_CSVS = {
     # }
 }
 
+
 # TODO Fill these out!
 RESPONSE_SAMPLING_RATE = MP4_SAMPLING_RATE
 RESPONSE_DESCRIPTION = "description about the processed response"
