@@ -446,6 +446,7 @@ def parse_mousedata(mousedata_filepath):
         elif line.startswith("weight:"):
             weight = clean(line)
     return name, desc, weight
+    return name, desc, weight
 
 
 def mass_process_sessions(root_path):
